@@ -1,13 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daffa's Portofolio</title>
-</head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daffa's Portofolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<body>
+    <body>
+        <nav class="topnav">
+            <div>
+                <img class="logo-icon" src="assets/Chroma_logo.png">
+            </div>
+
+            <section>
+                <a class="nav-item" href="#home">HOME</a>
+                <a class="nav-item" href="#about">About</a>
+                <a class="nav-item" href="#donasi">Donasi</a>
+                <a class="nav-item" href="#laporan">Laporan</a>
+            </section>
+        </nav>
+
+    <hr>
+
+    <section>
+        <!-- HOME -->
+        <section id="home">
+            <header>
+                <h1>Hi Daffa, Welcome To Our Website</h1>
+            </header>
+
+            <article>
+                <p> Lorem Ipsum Dolor Sit Amet...</p>
+
+                <div class="banner-container"></div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Social-Media -->
+        <section id="about-server">
+            <header>
+                <h1>Our Social Media</h1>
+            </header>
+
+            <article class="about-list">
+                <div>
+                    <div style="width: 50px; height: 50px; border: 1px solid black"></div>
+                    <h5>ABOUT SERVER</h5>
+                </div>
+
+                <div>
+                    <div style="width: 50px; height: 50px; border: 1px solid black"></div>
+                    <h5>MODE</h5>
+                </div>
+
+                <div>
+                    <div style="width:50px; height: 50px; border: 1px solid black"></div>
+                    <h5>PLAYER</h5>
+                </div>
+            </article>
+        </section>
+
+        <!-- Donasi -->
+        <section id="donasi">
+            <header>
+                <h1>INGIN MEMBANTU SERVER UNTUK MENJADI LEBIH BAIK?</h1>
+            </header>
+
+            <article>
+                <p> Lorem Ipsum Dolor Sit Amet...</p>
+
+                <div class="donasi-pages"></div>
+            </article>
+        </section>
+
+        <!-- Laporan -->
+        <section id="laporan">
+            <header>
+                <h1>INGIN MELAPORKAN PLAYER YANG MELAKUKAN CHEATING, GRIEFING, BULLYING DAN HAL LAINNYA YANG MENGGANGGU KENYAMANAN?</h1>
+            </header>
+
+            <article>
+                <p> Lorem Ipsum Dolor Sit Amet...</p>
+
+                <div class="banner-container">
+                
+                <section>
+                    <form>
+                        <label for="nickname">NICKNAME KAMU :</label>
+                        <input id="name" type="text" />
+                        
+                        <br>
+                        
+                        <label for="server">SERVER :</label>
+                        <select>
+                            <option>Vanilla</option>
+                            <option>Survival</option>
+                            <option>SkyBlock</option>
+                            <option>OneBlock</option>
+                        </select>
+                        
+                        <br>
+
+                        <label for="jenis-pelanggaran">JENIS PELANGGARAN :</label>
+                        <select>
+                            <option>Abuse</option>
+                            <option>Cheating</option>
+                            <option>Griefing</option>
+                            <option>Scam</option>
+                            <option>Badword</option>
+                            <option>Dan Lainnya...</option>
+                        </select>
+                        
+                        <br>
+
+                        <label for="nick-pelanggar">NICKNAME PELANGGAR :</label>
+                        <input id="nick-pelanggar" type="text" />
+                        
+                        <br>
+                        
+                        <label for="kronologi">Ceritakan Kronologi :<label>
+                        <input id="ceritakan-kronologi" type="text">
+                              
+                </section>
+                </div>
+
+            </article>
+        </section>
+    
+    </section>
 
 
-</body>
+
+
+    </body>
 </html>
+
+
+<div>
+    <button onclick="plusDivs(-1)">Previous</button>
+    <button onclick="plusDivs(1)">Next</button>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivsi(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs() {
+        var 1;
+        var imgList = document.getElementByClassName("img-slideshow");
+        if (n > imgList.length) slideIndex = 1;
+        else if (n < 1) slideIndex = imgList.length;
+    
+
+        for (1 = 0; 1 <imgList.length; 1++) {
+            imgList[1].style.display = "none";
+        }
+
+        imgList[slideIndex -1].style.display = "block";
+    }
+
+    setInterval(() => {
+        plusDivs(1);
+    }, 1000);
+</script>
+</div>

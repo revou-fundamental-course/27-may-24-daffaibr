@@ -1,0 +1,76 @@
+/* Ini CSS */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        width: 100px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .logo-icon {
+        margin-bottom: 14px;
+    }
+}
+
+.topnav {
+    overflow: show;
+    background-color: black;
+    padding: 0px;
+    font-family: Arial
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 30px;
+    text-decoration: none;
+    border-radius:15%
+}
+
+.topnav a:hover {
+    background-color: rgb(172, 171, 171);
+    color: white;
+}
+
+.topnav a.active {
+    background-color: blue;
+    color: red;
+}
+
+.logo-icon {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    padding: 0px 10px
+}
+
+nav > section {
+    display: flex;
+    align-items: center;
+}
+
+.banner-container {
+    height: 450px;
+    border: 1px solid black;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
