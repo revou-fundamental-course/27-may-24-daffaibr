@@ -26,7 +26,7 @@ nav {
     overflow: show;
     background-color: black;
     padding: 0px;
-    font-family: Arial
+    font-family: Arial;
 }
 
 .topnav a{
@@ -62,15 +62,66 @@ nav > section {
     align-items: center;
 }
 
-.banner-container {
-    height: 450px;
-    border: 1px solid black;
+.hal-home {
+    text-align: center;
 }
 
-.about-list {
+.text-pertama, .hal-sosmed, .hal-donasi, .form-laporan {
+    color: white;
     display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: black;
+    border-style: none;
+
+}
+
+.bg-image {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    filter: blur(10%);
+    background-position: center center;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.banner-container {
+    height: 450px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
+.form-table {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.label {
+    display: flex;
+    width: 100px;
+}
+
+.hal-laporan {
+    align-items: center;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
 
 
+@media only screen and (max-width: 480px) {
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

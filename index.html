@@ -21,50 +21,56 @@
             </section>
         </nav>
 
-    <hr>
+    <br>
 
-    <section>
+    <section class="hal-home">
+        <label>
+            <div class="bg-image" style= "background-image: url(../assets/Cloud_sky.jpg)";>
+
+        </label>
+
         <!-- HOME -->
-        <section id="home">
-            <header>
-                <h1>Hi Daffa, Welcome To Our Website</h1>
-            </header>
-
-            <article>
-                <p> Lorem Ipsum Dolor Sit Amet...</p>
-
+        <section class="text-home" id="home">
+            <header class="text-pertama">
+                <strong>WELCOME</strong>
+                <p>HI DAFFA, WELCOME TO OUR WEBSITE</p>
                 <div class="banner-container"></div>
+            </header>
+            </section>
             </article>
         </section>
+        </div>
 
-        <hr>
+        <br>
 
         <!-- Social-Media -->
-        <section id="about-server">
+        <section class="hal-sosmed" id="about-server">
             <header>
                 <h1>Our Social Media</h1>
             </header>
 
-            <article class="about-list">
+            <article class="social-media">
                 <div>
                     <div style="width: 50px; height: 50px; border: 1px solid black"></div>
-                    <h5>ABOUT SERVER</h5>
+                    <h5>Instagram</h5>
                 </div>
 
                 <div>
                     <div style="width: 50px; height: 50px; border: 1px solid black"></div>
-                    <h5>MODE</h5>
+                    <h5>Discord</h5>
                 </div>
 
                 <div>
                     <div style="width:50px; height: 50px; border: 1px solid black"></div>
-                    <h5>PLAYER</h5>
+                    <h5>Facebook</h5>
                 </div>
             </article>
         </section>
 
+        <br>
+
         <!-- Donasi -->
-        <section id="donasi">
+        <section class="hal-donasi" id="donasi">
             <header>
                 <h1>INGIN MEMBANTU SERVER UNTUK MENJADI LEBIH BAIK?</h1>
             </header>
@@ -76,8 +82,10 @@
             </article>
         </section>
 
+        <hr>
+
         <!-- Laporan -->
-        <section id="laporan">
+        <section class="hal-laporan" id="laporan">
             <header>
                 <h1>INGIN MELAPORKAN PLAYER YANG MELAKUKAN CHEATING, GRIEFING, BULLYING DAN HAL LAINNYA YANG MENGGANGGU KENYAMANAN?</h1>
             </header>
@@ -87,42 +95,59 @@
 
                 <div class="banner-container">
                 
-                <section>
-                    <form>
-                        <label for="nickname">NICKNAME KAMU :</label>
-                        <input id="name" type="text" />
-                        
+
+                <section class="form-laporan">
+                    <form class="input-laporan">
+                            <td for="nickname" required>NICKNAME :</td>
+                            <input id="name" type="text" class="input-text" name="nama" id="nama" placeholder="Nickname In Game Kamu"/>
+
                         <br>
                         
-                        <label for="server">SERVER :</label>
-                        <select>
-                            <option>Vanilla</option>
-                            <option>Survival</option>
-                            <option>SkyBlock</option>
-                            <option>OneBlock</option>
-                        </select>
+                            <td for="server">SERVER :</td>
+                            <select>
+                                 <option>Vanilla</option>
+                                 <option>Survival</option>
+                                 <option>SkyBlock</option>
+                                 <option>OneBlock</option>
+                            </select>
                         
                         <br>
 
-                        <label for="jenis-pelanggaran">JENIS PELANGGARAN :</label>
-                        <select>
-                            <option>Abuse</option>
-                            <option>Cheating</option>
-                            <option>Griefing</option>
-                            <option>Scam</option>
-                            <option>Badword</option>
-                            <option>Dan Lainnya...</option>
-                        </select>
+                        <tr class="form-table">
+                            <td class="label">TANGGAL :</td>
+                            <td>
+                              <input type="date" class="input-date" name="tgl" id="tgl" />
+                            </td>
+                          </tr>
+
+                        <br>
+                            <td for="jenis-pelanggaran">JENIS PELANGGARAN :</td>
+                            <select>
+                                <option>Abuse</option>
+                                <option>Cheating</option>
+                                <option>Griefing</option>
+                                <option>Scam</option>
+                                <option>Badword</option>
+                                <option>Bug</option>
+                                <option>Dan Lainnya...</option>
+                            </select>
                         
                         <br>
 
-                        <label for="nick-pelanggar">NICKNAME PELANGGAR :</label>
-                        <input id="nick-pelanggar" type="text" />
+                            <td for="nick-pelanggar">NICKNAME PELANGGAR :</td>
+                            <input id="nick-pelanggar" type="text" />
                         
                         <br>
                         
-                        <label for="kronologi">Ceritakan Kronologi :<label>
-                        <input id="ceritakan-kronologi" type="text">
+                            <td for="kronologi">Ceritakan Kronologi :<td>
+                            <input id="ceritakan-kronologi" type="text">  
+                        <br>
+                        <tr>
+                            <td>
+                                <button type="submit" onclick="formValidation()">Send</button>
+                            </td>
+                        </tr>                      
+                    </form>
                               
                 </section>
                 </div>
@@ -133,7 +158,7 @@
     </section>
 
 
-
+    <script src="../27-may-24-daffaibr/script.js"></script>
 
     </body>
 </html>
