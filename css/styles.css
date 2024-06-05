@@ -66,7 +66,7 @@ nav > section {
     text-align: center;
 }
 
-.text-pertama, .hal-sosmed, .hal-donasi, .form-laporan {
+.text-pertama, .hal-sosmed, .hal-visi, .form-laporan {
     color: white;
     display: flex;
     flex-direction: column;
