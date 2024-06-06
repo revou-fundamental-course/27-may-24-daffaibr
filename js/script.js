@@ -1,25 +1,30 @@
 // Ini JavaScript
 
-function randomString(len,charSet)	{
-	charSet = charSet || 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-	var randomString = '';
-	for (var i = 0; i < len; i++){
-		var randomPoz = Math.floor(Math.random() * charSet.length);
-		randomString += charSet.substring(randomPoz,randomPoz+1);
-	}
-	return randomString;
-}
+let nameInput = document.getElementById('nama-input')
 
-function cekCaptcha(){
-	var inputUser = document.querySelector(".input");
-	var captcha = document.querySelector(".box").innerHTML;
+document.getElementById('kirim').addEventListener("click", function() {
+    const nama = nameInput.value
 
-	if(inputUser.value === captcha){ // jika captcha benar jalankan fungsi di bawah ini
-		alert('captcha benar');
+    if (name == "") {
+        document.getElementById("error-name").innerHTML = "Nama Tidak Boleh Kosong!"
+    } else {
+    document.getElementById('name').innerHTML = nama
+    }
+})
 
-	}else if (inputUser.value.length === 5 && inputUser.value != captcha){ // jika captcha salah kosongkan bidang input dan acak captcha
-		inputUser.value ='';
-		document.querySelector(".box").innerHTML = randomString(5);
 
-	}
+function validateForm() {
+    const name = document.forms["message-form"]["full-name"].value;
+    const birthDate = documentforms["messsage-forms"]["birth-date"].value;
+    const gender = documentforms["messsage-forms"]["gender"].value;
+    const messages = documentforms["messsage-forms"]["messages"].value;
+
+    if (name == "" || birthDate == "" || gender == "" || messages == "") {
+        alert("Tidak boleh ada yang kosong");
+        return false;
+    }
+
+    setSenderUI(name, birthDate, gender, messages);
+
+    return false;
 }
